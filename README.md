@@ -7,4 +7,7 @@
      antes si hay alguna escucha haremos sudo netstat -putan |grep 5432, asi sabremos si lo anterior es necesario oh no.
 
  - Una vez revisado eso hacemos un docker compose yml en el que ponemos la base datos junto al usuario, contraseña y puertos a los que enlazamos el SQL.
-   En este caso sera 5432 y para levantarlo haremos docker-compose up
+   En este caso sera 5432, por último enlazarlo a un volumen.
+
+ - Ahora para añadir la parte de odoo pillaremos una imagen de odoo y le pondremos de nombre del contendor dam22_odo, le pondremos que este en los puertos 8069 y que dependa de la base de datos, que es importante
+
