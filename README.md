@@ -26,7 +26,8 @@
 
 # Enlazar Postgres y Odoo
  
+  - Habiendo hecho ya los pasos previos poco queda sobre este paso. Una vez levantemos odoo, lo abramos en el navegador nos saldrá la primera pestaña inicial en el que habrá que rellenar unos datos básicos y crear una db de test. Llevandonos a tenerlo ya preparado pero faltando enlazar el IDE con la base de datos.
 
+# Enlazar PyCharm con la Base de datos
 
- - Ahora para añadir la parte de odoo pillaremos una imagen de odoo y le pondremos de nombre del contendor dam22_odo, le pondremos que este en los puertos 8069 y que dependa de la base de datos, que es importante
-
+ - Recordamos el environment que establecimos en el primer paso? Bien. Iremos al PyCharm Professional (porque el community no tiene esta feature) y iremos a la derecha donde veremos que hay una pestaña de Database. Clickamos en ella y le damos al simbolo de "+". Seleccionamos el PostgresSQL y ponemos los datos de acceso puestos en el primer paso. Podemos usar el Test Connection para comprobar si lo hemos hecho correctamente y si es así darle al Apply, entonces nos saldrá en esa zona las tablas y todo lo que contiene.
